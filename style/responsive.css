@@ -1,0 +1,306 @@
+@media screen and (max-width:576px) {
+    .navbar-container {
+        padding: 5px;
+
+    }
+    .nav-hamburger-menu {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .navbar-container ul{
+        display: none;
+    }
+
+    /* banner-container starts here */
+    .banner-container {
+        flex-direction: column;
+    }
+        
+    .banner-text 
+    {
+        width: 100%;
+    }
+    .banner-image{  
+        width: 100%;
+    }
+    .banner-text>h2 {
+      font-size: 2.5rem;
+    }
+    .banner-text span {
+      font-size: 2.5rem;
+    }
+    .banner-btn{
+     display: flex;
+    }
+    .btn-primary{
+        font-size: 1rem;
+    }
+    .banner-image img {
+        width: 100%;
+    }
+    .free-videos {
+        
+        top: 8%;
+        left: 52%;
+    }
+    .free-videos h2{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .video-turorial {
+        bottom: 80px;
+        left: 0px;
+    }
+
+    /* main section starts here */
+    /* change your habits */
+    .change-your-habits-cards {
+        margin: 20px 20px 0 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    .change-your-habits-title {
+        /* border: 1px solid red; */
+        width: 90%;
+    }
+
+    .change-your-habits-title h2 {
+        font-size: 1.5rem;
+    }
+    
+    .change-your-habits-title p{
+        text-align: left;
+    }
+
+
+
+
+
+    .habits-singleCard {
+        width: 100%;
+        flex-direction: column;
+        
+    }
+
+    /* Run an Extra Mile Easily  */
+    .run-extra-mile-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .run-text-area{
+        width: 100%;
+    }
+    .run-text-area h2 {
+        font-size: 3rem;
+    }
+    .run-image-area{
+        width: 100%;
+        zoom: 50%;
+    }
+
+
+    /* Trainings and Exercises section */
+
+    .trainings-exercises-title {
+        width: 100%;
+        color: gray;
+    }
+
+    .trainings-exercises-title h2 {
+        font-size: 2rem;
+    }
+
+    .trainings-cards {
+        height: 300px;
+    }
+    .trainings-cards p{
+        font-size: 10px;
+    }
+    .trainings-singleCard-1 {
+        /* border: 1px solid blue; */
+
+        grid-column: 1/span 6;
+        grid-row: 1/span 6;
+
+        position: relative;
+    }
+
+    .trainings-singleCard-2 {
+        /* border: 1px solid blue; */
+
+        grid-column: 7/span 6;
+        grid-row: 1/span 6;
+    }
+    .trainings-singleCard-4 {
+        /* border: 1px solid blue; */
+
+        grid-column: 1/span 6;
+        grid-row: 7/span 6;
+
+        position: relative;
+    }
+
+    .trainings-singleCard-5 {
+        /* border: 1px solid blue; */
+        grid-column: 7/span 6;
+        grid-row: 7/span 6;
+
+        position: relative;
+    }
+    .trainings-singleCard-3,
+    .trainings-singleCard-6{
+        display: none;
+    }
+
+    .bmi-title {
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+
+    .calculator-chart {
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .bmi-calculator-chart {
+        width: 100%;
+    }
+    .calculate-your-bmi {
+        width: 100%;
+    }
+    .bmi-calculator-chart h2{
+        font-size: 1.3rem; 
+    }
+    table {
+        width: 100%;
+    }
+
+    /* meet-our-team section */
+    .our-team-title {
+        text-align: center;
+        width: 100%;
+    }
+
+    .our-team-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team-singleCard:nth-child(1),
+    .team-singleCard:nth-child(4){
+        display: none;
+    }
+    /* testimonial */
+    .testimonial-singleCard-parent {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+    .testimonial-singleCard {
+        /* border: 1px solid rgb(34, 34, 34); */
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background: rgb(34, 34, 34);
+        border-radius: 10px;
+        color: gray;
+    }
+
+    /* footer section  */
+    .footer-parent {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px 20px;
+        gap: 30px;
+    }
+    .single-footer {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+   
+    .navbar-container {
+            width: 90%;
+            margin: 50px auto;
+            display: flex;
+            height: 80px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5px 0 20px;
+    
+        }
+        .navbar-container>ul {
+            padding: 12px 10px 12px 1px;
+        }
+        .navbar-container>ul>li {
+            margin: 0 8px;
+        }
+        /* banner-container starts here */
+        .banner-container {
+            flex-direction: column;
+      
+        }
+        .banner-text {
+            width: 80%;
+        }
+
+        /* change your habits */
+        .change-your-habits-cards {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+        }
+        
+        .habits-singleCard {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        /* Run an Extra Mile Easily  */
+        .run-extra-mile-section {
+            gap: 30px;
+
+        }
+        .run-text-area h2 {
+            font-size: 2rem;
+        }
+
+        .trainings-cards {
+            height: 380px;
+        }
+       
+
+
+
+         .bmi-title {
+             /* border: 1px solid red; */
+             width: 100%;
+         }
+    
+         .calculator-chart {
+             flex-direction: column;
+             gap: 20px;
+         }
+    
+         .bmi-calculator-chart {
+             width: 100%;
+         }
+    
+         .calculate-your-bmi {
+             width: 100%;
+         }
+
+        .team-name h4{
+            font-size: 10px;
+        }
+}
+
+/* @media screen and (min-width:1001px) and (max-width:1500px) {
+    
+} */
+
+@media screen and (min-width:992px) {
+    
+}

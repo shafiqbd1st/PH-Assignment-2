@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* font-family: "Inter", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap'); 
+/* font-family: "Dancing Script",cursive; */
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* share class */
+.btn-primary{
+    margin: 20px 8px;
+    padding: 10px 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+
+header, main, footer{
+    max-width: 1440px;
+}
+footer{
+    background: rgb(34, 34, 34);
+}
+.navbar-container-section{
+    background: linear-gradient(360.00deg, rgba(145, 141, 141, 0.212), rgba(150, 144, 144, 0.192) 100%);
+    
+}
+
+.navbar-container{
+    /* border: 1px solid green; */
+    width: 80%;
+    margin: 50px auto 0;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: bisque; */
+    padding: 0 20px 0 40px;
+
+}
+
+
+.navbar-container h1{
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: italic;
+    color: #E6533C;
+}
+
+.navbar-container > ul{
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 20px 12px 0;
+    border-radius: 20px;
+}
+
+.navbar-container > ul > li{
+    list-style-type: none;
+    margin: 0 8px;
+}
+
+.navbar-container > ul > li > a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    /* background-color: #E6533C; */
+    
+}
+
+.navbar-container .active{
+    margin-left: -5px;
+    background-color: #E6533C;
+}
+.nav-hamburger-menu{
+    display: none;
+}
+
+/* banner-container starts here */
+.banner-container {
+    width: 80%;
+    margin: 0 auto 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-text{
+    /* border: 1px solid red; */
+    /* height: 460px; */
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+.banner-text > h2{
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+
+.banner-text span{
+    font-family: 'Miama', sans-serif;
+    font-style: italic;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 0.1;
+}
+
+.banner-text p{
+    color: gray;
+}
+
+#btn-left{
+    background-color: #E6533C;
+}
+#btn-right{
+    background-color: #241f1fa8;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+.banner-image{
+    /* border: 1px solid navy; */
+    /* height: 460px; */
+    width: 47%;
+    position: relative;
+}
+
+.banner-image img{
+    width: 70%;
+    height: 480px;
+    display: block;
+    margin-left: auto;
+}
+
+.free-videos{
+    /* border: 1px solid red; */
+    width: 180px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    border-radius: 20px;
+}
+.banner-image .free-videos h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+.banner-image .free-videos p{
+    color: gray;
+}
+
+.video-turorial{
+    /* border: 1px solid red; */
+    width: 180px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 20px;
+
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+
+
+}
+.video-turorial h2{
+    font-size: 2.5rem;
+    margin: 5px;
+}
+
+.video-turorial p{
+    color: gray;
+}
+
+.video-turorial div:first-child{
+    /* border: 1px solid blue; */
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #E6533C;
+}
+
+
+/* main section starts here */
+.change-your-habits-section{
+    /* border: 2px solid green; */
+    width: 80%;
+    margin: 20px auto;
+}
+
+.change-your-habits-title{
+    /* border: 2px solid blue; */
+    width: 60%;
+    margin: 40px auto;
+    text-align: center;
+}
+.change-your-habits-title h2{
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 8px 0;
+}
+.change-your-habits-title p{
+    color: gray;
+}
+
+.change-your-habits-cards{
+    /* border: 2px solid salmon; */
+    /* height: 250px; */
+    margin: 20px 20px 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+}
+
+.habits-singleCard{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.habits-singleCard img{
+    /* width: 100%; */
+    border: 1px solid gray;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.habits-singleCard h5{
+    font-size: 1rem;
+    margin: 8px 0;
+}
+.habits-singleCard p{
+    color: gray;
+}
+
+/* Run an Extra Mile Easily  */
+.run-extra-mile-section{
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: 50px auto;
+    
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.run-text-area{
+    padding: 20px;
+    width: 47%;
+}
+.run-image-area{
+    padding: 15px;
+    width: 47%;
+}
+
+.run-text-area h2{
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 15px 0;
+}
+.run-text-area p{
+    color: gray;
+}
+.run-text-area #run-btn{
+    background-color: #E6533C;
+    width: 80%;
+}
+.run-image-area img{
+    width: 100%;
+    border-radius: 30px;
+    object-fit: none;
+    object-position: 72% 31%;
+    zoom: 80%;
+}
+
+
+/* Trainings and Exercises section */
+   
+.trainings-exercises{
+    /* border: 1px solid blue; */
+    width: 80%;
+    margin: 50px auto;
+}
+.trainings-exercises-title {
+    width: 60%;
+    color: gray;
+}
+.trainings-exercises-title h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 10px 0;
+    color: white;
+}
+
+.training-cards-main{
+    /* border: 1px solid red; */
+    /* height: 500px; */
+    padding: 20px 0;
+}
+
+.trainings-cards{
+    /* border: 5px solid salmon; */
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+}
+.trainings-cards img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trainings-singleCard-1{
+    /* border: 1px solid blue; */
+
+    grid-column: 1/span 3;
+    grid-row: 1/span 6;
+
+    position: relative;
+}
+.trainings-singleCard-2{
+    /* border: 1px solid blue; */
+
+    grid-column: 4/span 6;
+    grid-row: 1/span 6;
+
+    position: relative;
+}
+
+.trainings-singleCard-3{
+    /* border: 1px solid blue; */
+
+    grid-column: 10/span 3;
+    grid-row: 1/span 6;
+
+    position: relative;
+}
+.trainings-singleCard-4{
+    /* border: 1px solid blue; */
+
+    grid-column: 1/span 6;
+    grid-row: 7/span 6;
+
+    position: relative;
+}
+.trainings-singleCard-5{
+    /* border: 1px solid blue; */
+    grid-column: 7/span 3;
+    grid-row: 7/span 6;
+
+    position: relative;
+}
+.trainings-singleCard-6{
+    /* border: 1px solid blue; */
+    grid-column: 10/span 3;
+    grid-row: 7/span 6;
+
+    position: relative;
+}
+
+.singleCard-text-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    background-color: #06ffd157;
+
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.singleCard-text-1 p {
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+
+.singleCard-text-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    background-color: #ff00003f;
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.singleCard-text-2 p {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.singleCard-text-3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.486);
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.singleCard-text-3 p{ 
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.singleCard-text-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    background-color: #00000062;
+
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.singleCard-text-4 p {
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.singleCard-text-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    background-color: #42FF004D;
+
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.singleCard-text-5 p {
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.singleCard-text-6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    background-color: #0047FF4D;
+
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.singleCard-text-6 p {
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+
+/* BMI Calculator section  */
+.bmi-calculator{
+    width: 80%;
+    margin: 0 auto;
+}
+.bmi-title{
+    /* border: 1px solid red; */
+    width: 60%;
+    margin: 50px auto;
+}
+.bmi-title h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.calculator-chart{
+    /* border: 1px solid blue; */
+    width: 80%;
+    margin: 50px auto;
+    background: rgb(34, 34, 34);
+    
+    display: flex;
+    gap: 50px;
+    padding: 60px 40px 20px 40px;
+    border-radius: 10px;
+
+}
+
+
+table {
+    border: 1px solid gray;
+    width: 80%;
+    margin-top: 60px;
+    border-collapse: collapse;
+    text-align: center;
+}
+td, th{
+    border: 1px solid grey;
+    height: 40px;
+}
+td{
+    color: gray;
+   
+}
+
+.bmi-calculator-chart{
+    /* border: 1px solid red; */
+    width: 48%;
+}
+
+.calculate-your-bmi{
+    width: 48%;
+} 
+
+.calculate-your-bmi-title p{
+    margin: 15px 0;
+    color: gray;
+}
+.form-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin: 15px 8px 0; */
+}
+
+.form-field{
+    width: 48%;
+}
+
+.form-container input, select{
+    width: 100%;
+    height: 50px;
+    margin: 5px 0;
+    padding: 15px;
+    border-radius: 8px; 
+    color: grey;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+}
+.form-field:nth-child(5){
+    width: 100%;
+}
+
+.bmi-calculate #run-btn{
+    background-color: #E6533C;
+    width: 200px;
+    height: 50px;
+    
+} 
+
+
+/* meet-our-team section */
+.meet-our-team{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.our-team-title{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.our-team-title p{
+    color: gray;
+}
+
+.our-team-cards{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: rgb(34, 34, 34);
+    border-radius: 15px;
+    gap: 20px;
+    padding: 20px;
+}
+.team-singleCard{
+    position: relative;
+}
+.team-singleCard img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    /* padding: 20px; */
+    object-fit: cover;
+    opacity: 0.5;
+}
+.team-name{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+}
+.team-name p{
+    color: gray;
+}
+
+/* testimonial section */
+.testimonial-area-container{
+    width: 80%;
+    margin: 50px auto;
+    /* border: 2px solid blue; */
+}
+.testimonial-title{
+    text-align: center;
+    padding: 20px 0;
+}
+.testimonial-title h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+.testimonial-title h4{
+    letter-spacing: 5px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.testimonial-singleCard-parent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 30px;
+}
+
+.testimonial-singleCard{
+    /* border: 1px solid rgb(34, 34, 34); */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: rgb(34, 34, 34);
+    border-radius: 10px;
+    color: gray;
+}
+
+/* .testimonial-singleCard:hover{
+    border: 2px solid #E6533C;
+} */
+
+
+
+.testimonial-img{
+    width: 200px;
+    margin-right: 20px;
+}
+
+.testimonial-img img{
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid #E6533C;
+}
+.testimonial-text > span:first-child{
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.testimonial-text > span:nth-child(2){
+    color: gray;
+    font-size: 0.8rem;
+}
+
+
+/* footer container */
+.footer-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-parent{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px;
+}
+
+.single-footer{
+    width: 31%;
+}
+
+.single-footer h1{
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: italic;
+    color: #E6533C;
+    margin-bottom: 20px;
+}
+.single-footer p{
+    color: grey;
+}
+.single-footer h3{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.single-footer > ul > li{
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.single-footer > ul > li > a{
+    text-decoration: none;
+    color: grey;
+}
+.line{
+    border-top: 1px solid grey;
+    width: 90%;
+    margin: 0 auto;
+}
+section > p{
+    padding: 0 0 20px 0;
+}
