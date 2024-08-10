@@ -23,6 +23,7 @@ body{
     border: none;
     border-radius: 20px;
     color: white;
+    cursor: pointer;
 }
 
 
@@ -56,6 +57,7 @@ footer{
     font-weight: 800;
     font-style: italic;
     color: #E6533C;
+    cursor: pointer;
 }
 
 .navbar-container > ul{
@@ -302,7 +304,7 @@ footer{
 }
 .run-text-area #run-btn{
     background-color: #E6533C;
-    width: 80%;
+    width: 40%;
 }
 .run-image-area img{
     width: 100%;
@@ -734,6 +736,7 @@ td{
 .footer-parent{
     display: flex;
     justify-content: space-between;
+
     padding: 50px 50px;
 }
 
