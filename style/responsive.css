@@ -261,7 +261,13 @@
         /* Run an Extra Mile Easily  */
         .run-extra-mile-section {
             gap: 30px;
-
+            
+        }
+       
+        .run-text-area #run-btn {
+            /* border: 1px solid red; */
+            background-color: #E6533C;
+            width: 50%;
         }
         .run-text-area h2 {
             font-size: 2rem;

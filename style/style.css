@@ -220,7 +220,7 @@ footer{
 .change-your-habits-section{
     /* border: 2px solid green; */
     width: 80%;
-    margin: 20px auto;
+    margin: 50px auto;
 }
 
 .change-your-habits-title{
@@ -274,7 +274,7 @@ footer{
 .run-extra-mile-section{
     /* border: 2px solid red; */
     width: 80%;
-    margin: 50px auto;
+    margin: 100px auto;
     
     border-radius: 18px;
     background: rgb(34, 34, 34);
@@ -320,7 +320,7 @@ footer{
 .trainings-exercises{
     /* border: 1px solid blue; */
     width: 80%;
-    margin: 50px auto;
+    margin: 100px auto;
 }
 .trainings-exercises-title {
     width: 60%;
@@ -616,7 +616,7 @@ td{
 /* meet-our-team section */
 .meet-our-team{
     width: 80%;
-    margin: 50px auto;
+    margin: 100px auto;
 }
 
 .our-team-title{
@@ -666,7 +666,7 @@ td{
 }
 .testimonial-title{
     text-align: center;
-    padding: 20px 0;
+    /* padding: 20px 0; */
 }
 .testimonial-title h2{
     font-size: 2.5rem;
@@ -676,7 +676,7 @@ td{
 .testimonial-title h4{
     letter-spacing: 5px;
     color: gray;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .testimonial-singleCard-parent{
@@ -695,13 +695,12 @@ td{
     background: rgb(34, 34, 34);
     border-radius: 10px;
     color: gray;
+    transition: 0.5s;
 }
 
-/* .testimonial-singleCard:hover{
-    border: 2px solid #E6533C;
-} */
-
-
+.testimonial-singleCard:hover{
+    outline: 2px solid #E6533C;
+}
 
 .testimonial-img{
     width: 200px;
@@ -731,6 +730,7 @@ td{
 .footer-container{
     width: 80%;
     margin: 0 auto;
+    margin-top: 100px;
 }
 
 .footer-parent{
