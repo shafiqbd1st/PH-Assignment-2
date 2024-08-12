@@ -9,6 +9,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* html{
+    font-size: 16px;
+} */
 body{
     font-family: "Inter", sans-serif;
     background-color: black;
@@ -19,7 +22,7 @@ body{
 .btn-primary{
     margin: 20px 8px;
     padding: 10px 15px;
-    font-size: 20px;
+    font-size: 1.2rem;
     border: none;
     border-radius: 20px;
     color: white;
@@ -30,14 +33,13 @@ body{
 header, main, footer{
     max-width: 1440px;
 }
+header{
+
+    background: linear-gradient(360.00deg, rgba(145, 141, 141, 0.212), rgba(150, 144, 144, 0.192) 100%);
+}
 footer{
     background: rgb(34, 34, 34);
 }
-.navbar-container-section{
-    background: linear-gradient(360.00deg, rgba(145, 141, 141, 0.212), rgba(150, 144, 144, 0.192) 100%);
-    
-}
-
 .navbar-container{
     /* border: 1px solid green; */
     width: 80%;
