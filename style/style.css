@@ -29,12 +29,7 @@ body{
     cursor: pointer;
 }
 
-
-header, main, footer{
-    max-width: 1440px;
-}
 header{
-
     background: linear-gradient(360.00deg, rgba(145, 141, 141, 0.212), rgba(150, 144, 144, 0.192) 100%);
 }
 footer{

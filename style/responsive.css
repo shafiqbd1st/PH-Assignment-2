@@ -1,7 +1,6 @@
 @media screen and (max-width:576px) {
     .navbar-container {
         padding: 5px;
-
     }
     .nav-hamburger-menu {
         display: block;
@@ -16,7 +15,6 @@
     .banner-container {
         flex-direction: column;
     }
-        
     .banner-text 
     {
         width: 100%;
@@ -76,10 +74,6 @@
         text-align: left;
     }
 
-
-
-
-
     .habits-singleCard {
         width: 100%;
         flex-direction: column;
@@ -101,7 +95,6 @@
         width: 100%;
         zoom: 50%;
     }
-
 
     /* Trainings and Exercises section */
 
@@ -277,9 +270,6 @@
             height: 380px;
         }
        
-
-
-
          .bmi-title {
              /* border: 1px solid red; */
              width: 100%;
